@@ -1,0 +1,21 @@
+<section id="services" class="services">
+  <div class="container">
+    <div class="row" >
+        <div class="col-md-4 mx-auto my-5"  style="width: 18rem;" *ngFor= "let comm of foodData |
+        paginate: { itemsPerPage: 10,
+          currentPage: page,
+         totalitems:totallength
+         } ">
+        <div class="icon-box" style="padding-bottom: 5px;" data-aos="zoom-in-left">
+        <h4 class="title"><a href="">{{comm.description}}</a></h4>
+        <p class="description">{{comm.foodCategory}}</p>
+        <p class="description">{{comm.fdcId}}</p>
+        <a  class="btn btn-primary" (click)="details(comm.fdcId)"> Details</a>
+        <button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="Add to favorites" style="margin-left: 5%;" (click)="favorite(comm.fdcId,comm.description,comm.foodCategory)"><i class="bi bi-heart"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <pagination-controls class="text-center" (pageChange)="page = $event"></pagination-controls>
+</div>
+</section>

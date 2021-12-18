@@ -1,0 +1,7 @@
+@media screen and (max-width: 600px) {
+    .navbar {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,37 @@
+<nav class="navbar" style="background-color: #364ea0ee;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Favorite Items</a>
+    </div>
+  </nav>
+
+<div class="container" >
+    <div class="row"  >
+      <div class="col-md-4 mx-auto my-5"  style="width: 18rem;" *ngFor= "let comm of favDetails">
+        <div class="card-body" >
+        <h5 class="card-subtitle mb-2 ">Item Name : {{comm.itemName}}</h5>
+        <h5 class="card-subtitle mb-2 ">Description : {{comm.description}}</h5>
+        <a  class="card-link" (click)="detail(comm.fdcId)" > Details</a>
+        <a  class="card-link" (click)="deleteFav(comm.userid)" ><i class="bi bi-trash-fill"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <nav class="navbar" style="background-color: #364ea0ee;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Rcomended Items</a>
+    </div>
+  </nav>
+
+  <div class="container" >
+    <div class="row"  >
+      <div class="col-md-4 mx-auto my-5"  style="width: 18rem;" *ngFor= "let comm of favalldetails">
+        <div class="card-body">
+        <h5 class="card-subtitle mb-2 ">Item Name : {{comm.itemname}}</h5>
+        <h5 class="card-subtitle mb-2 ">Description : {{comm.description}}</h5>
+        <a  class="card-link" (click)="details(comm.fdcId)" > Details</a>
+
+      </div>
+    </div>
+  </div>
+  </div>

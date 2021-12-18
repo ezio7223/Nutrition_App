@@ -1,0 +1,26 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+.containers{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+.col{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+img{
+
+    height: 200px;
+    width: 100%;
+}
+
+.card-body{
+
+    background-color: rgb(109, 185, 109);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.my-pagination /deep/ .ngx-pagination .current {
+    background: red;
+  }

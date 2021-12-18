@@ -1,0 +1,22 @@
+<h4 > <strong>For 100g</strong> </h4>
+<h4><strong>Food Name: {{foodname}}</strong></h4>
+<table class="table table-bordered">
+    <thead class="table-info">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Average Amount</th>
+        <th scope="col">Unit</th>
+      </tr>
+    </thead>
+    <tbody class="table-success"> 
+      <tr *ngFor= "let comm of foodNutrients">
+        <td>{{comm.nutrient.name}} </td>
+        <td>{{comm.amount}}</td>
+        <td>{{comm.nutrient.unitName}}</td>
+      </tr>
+      <tr>
+      </tr>
+      <tr>
+      </tr>
+    </tbody>
+  </table>
